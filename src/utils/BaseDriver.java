@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
@@ -48,15 +49,8 @@ public class BaseDriver {
         signInButton.click();
     }
 
-//    @BeforeClass(dependsOnMethods = "setup")
-//    void login(){
-//
-//        //emailqwe@gmail.com
-////    pass:12345
-//    }
-
     @AfterClass(alwaysRun = true)
     protected void closeDriver() {
-//        driver.quit();
+        driver.quit();
     }
 }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Practice">
+    <test name="practices with chrome">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="TestNG_Practice_1"></class>
+            <class name="TestNG_Practice_2"></class>
+        </classes>
+    </test>
+    <test name="practices with firefox">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="TestNG_Practice_1"></class>
+            <class name="TestNG_Practice_2"></class>
+        </classes>
+    </test>
+</suite>

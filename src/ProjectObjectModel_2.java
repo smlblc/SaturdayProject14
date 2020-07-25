@@ -24,14 +24,21 @@ public class ProjectObjectModel_2 {
     @FindBy(css = "a[class='fancybox-item fancybox-close']")
     public WebElement closeWishListAlertButton;
 
+    //account
     @FindBy(xpath = "(//div[@class='header_user_info'])[1]")
-    public WebElement signInButton;
+    public WebElement username;
+    //icon-heart
+    @FindBy(className = "icon-heart")
+    public WebElement myWishlistButton;
 
-//    @FindBy(css = "li[class='lnk_wishlist']")
-//    public WebElement wishListButton;
+    @FindBy(css = "tr[id*='wishlist']>td:nth-child(5)>a")
+    public WebElement viewWishList;
 
+    @FindBy(css = ".row .lnkdel")
+    public WebElement removefromWishList;
 
-
+    @FindBy(className = "icon-remove")
+    public WebElement deleteItem;
 
 
 
