@@ -6,7 +6,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import utils.BaseDriver;
 
-import java.sql.SQLOutput;
 import java.util.Random;
 
 public class TestNG_Practice_1 extends BaseDriver {
@@ -14,7 +13,7 @@ public class TestNG_Practice_1 extends BaseDriver {
     @Test
     void createAddress(){
 
-        ProjectObjectModel pom = new ProjectObjectModel(driver);
+        ProjectObjectModel_1 pom = new ProjectObjectModel_1(driver);
 
         WebElement my_addresses = driver.findElement(By.className("icon-building"));
         my_addresses.click();
